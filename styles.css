@@ -118,7 +118,7 @@ body {
 
 @media (max-width: 500px) {
     .home {
-        height: 120vh;
+        height: auto;
         padding-top: 6rem;
     }
     .home h1 {
@@ -180,7 +180,7 @@ body {
 
 @media (max-width: 500px) {
     .resume {
-        height: 150vh;
+        height: auto;
         padding-top: 6rem;
     }
     .resume h1 {
