@@ -1,30 +1,22 @@
-// const listaProjetos = document.querySelector(".lista-projetos");
+const container = document.querySelector(".container");
+const nav = container.querySelector(".nav");
+const temaBtn = nav.querySelector("#tema");
+const imgTema = temaBtn.querySelector("#imageTema")
 
-// function createProjeto(pathImage) {
-//   const li = document.createElement("li");
-//   const a = document.createElement("a");
+console.log(nav, container, imgTema);
 
-//   li.style = `
-//   width: 300px;
-//   height: 300px;
-//   background: url("images/projetosimage/projeto0${pathImage}.png") no-repeat;
-//   background-size: 450px;
-//   background-position: center;
-//   `;
+let dark = true
 
-//   a.innerHTML = "VER";
-//   a.setAttribute("href", "#");
-//   li.appendChild(a);
-//   li.classList.add("projeto");
+temaBtn.addEventListener("click", () => {
+    container.classList.toggle('dark',dark )
+    nav.classList.toggle('dark-nav',dark)
 
-//   listaProjetos.appendChild(li);
-// }
-
-// // createProjeto(1)
-// function addProjetos() {
-//   for (let i = 1; i <= 2; i++) {
-//     createProjeto(i);
-//   }
-// }
-
-// addProjetos();
+    if(imgTema.getAttribute('src') == './images/tema.png'){
+        imgTema.setAttribute('src', './images/lua.png')
+    }
+    else if (imgTema.getAttribute('src') == './images/lua.png'){
+        imgTema.setAttribute('src', './images/tema.png')
+    }
+    
+    dark = !dark;
+});
