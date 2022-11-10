@@ -27,6 +27,8 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #333;
+    margin-left: 1rem;
+    letter-spacing: 2px;
 }
 
 .nav-item {
