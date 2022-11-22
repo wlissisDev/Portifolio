@@ -163,6 +163,7 @@
 
     /* para a animação nao aparecer do lado de fora */
     overflow: hidden;
+    font-size: 18px;
 
 }
 
@@ -233,6 +234,19 @@
 .githubTitle{
     font-size: 100px;
     color: #333;
+    transition: .3s all ease;
+}
+
+.githubLink{
+    font-size: 100px;
+    color: #333;
+    transition: .3s all ease;
+    font-weight: bold;
+    text-decoration: underline #195b2c;
+}
+.githubLink:hover{
+    color: #195b2c;
+    cursor: pointer;
 }
 
 .githubChart{
@@ -279,18 +293,9 @@
     display: none;
 }
 
-.githubSm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    color: #555;
-    font-size: 30px;
-    text-align: center;
-}
 .githubTitle{
     text-align: center;
-    font-size: 10vw;
+    font-size: 6vw;
 }
 .githubSm img {
     background-color: white;
@@ -299,21 +304,57 @@
 }
 
 
+.skillsContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillTitle{
+    font-size: 4vw;
+    color: #333;
+}
+.skills{}
+.skill{}
+
+.contactContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactTitle{
+    font-size: 4vw;
+    color: #333;
+}
+
+
 
 
 /* RESPONSIVIDADE */
 @media screen and (max-width:1024px) {
+    .githubSm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: #555;
+        font-size: 30px;
+        text-align: center;
+    }
 
     .projects{
         padding: 0 30px;
+        text-align: center;
     }
 
     .project{
         flex-direction: column;
+        height: max-content;
     }
 
     .phone{
-        height: auto;
         overflow: auto;
     }
 
