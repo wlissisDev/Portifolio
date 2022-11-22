@@ -8,6 +8,9 @@ const projectsTitle = document.querySelector(".projectsTitle");
 const phones = document.querySelectorAll(".phone");
 const laptops = document.querySelectorAll(".laptop");
 
+// const skillsDir = document.querySelectorAll(".dir");
+// const skillsEsq = document.querySelectorAll(".esq");
+
 
 
 for (let i = 0; i < 365; i++) {
@@ -45,8 +48,21 @@ window.addEventListener('scroll',() =>{
     AuthorName.style.transform = `translateX(calc(-100vh - ${-offSetY}px))`
     jobTitleContainer.style.backgroundPositionY = `${offSetY*0.5}px`
     jobTitle.style.transform = `translateX(calc(200vh - ${offSetY}px))`
+    
     projectsTitle.style.transform = `translateY(calc(300vh - ${offSetY}px))`
     phones[0].style.transform = `translateX(calc(430vh - ${offSetY}px))`
+    
     laptops[0].style.transform = `translateX(calc(-550vh + ${offSetY}px))`
     laptops[1].style.transform = `translateX(calc(670vh - ${offSetY}px))`
+
+    // skillsDir[0].style.transform = `translateX(calc(760vh - ${offSetY}px))`
+    // skillsDir[1].style.transform = `translateX(calc(760vh - ${offSetY}px))`
+    // skillsDir[2].style.transform = `translateX(calc(760vh - ${offSetY}px))`
+    // skillsDir[3].style.transform = `translateX(calc(760vh - ${offSetY}px))`
+
+    // skillsEsq[0].style.transform = `translateX(calc(-760vh + ${offSetY}px))`
+    // skillsEsq[1].style.transform = `translateX(calc(-760vh + ${offSetY}px))`
+    // skillsEsq[2].style.transform = `translateX(calc(-760vh + ${offSetY}px))`
+    // skillsEsq[3].style.transform = `translateX(calc(-760vh + ${offSetY}px))`
+
 })
