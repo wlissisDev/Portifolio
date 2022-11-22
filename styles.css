@@ -520,7 +520,8 @@
 
     .projectDescription{
         font-size: 18px;
-        text-align: justify;
+        text-align: center;
+        height: auto;
     }
 
     .skillsContainer{
