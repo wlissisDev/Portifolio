@@ -157,6 +157,8 @@
     cursor: pointer;
     position: relative;
 
+    text-decoration: none;
+
     /* para a animação nao aparecer do lado de fora */
     overflow: hidden;
     font-size: 18px;
