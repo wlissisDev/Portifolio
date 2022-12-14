@@ -5,239 +5,244 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wlisses Dev</title>
-    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>Wlissis Dev</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- INTRO -->
-        <div class="intro">
-            <div class="salute">
-                <div class="saluteTextContainer">
-                    <h1 class="saluteText">Oi</h1>
-                </div>
-                <div class="saluteImageContainer">
-                    <img src="./img/person.png" class="saluteImage">
-                </div>
-            </div>
-            <div class="nameContainer">
-                <h2 class="name">Eu sou Wlisses</h2>
-            </div>
-            <div class="jobTitleContainer dark">
-                <h2 class="jobTitle">um Desenvolvedor Web</h2>
-            </div>
-
+        <div class="navbar">
+            <a href="#home" class="logo">WLISSISDEV</a>
+            <ul class="nav">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">Aboute</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="theme"><input type="radio"> DARK</button></li>
+            </ul>
         </div>
-
-        <!-- PROJECTS -->
-
-        <div class="projects">
-            <h1 class="projectsTitle">
-                Aqui estão alguns dos meus projetos
-            </h1>
-            <div class="project">
-                <div class="phone">
-                    <img src="./img/phone.png" alt="phone">
-                    <div class="phoneAcreen">
-                        <img class="phoneApp" src="./img/mobile-design.jpg" alt="">
-                    </div>
-                </div>
-                <div class="projectDetail">
-                    <h1 class="projectTitle">Home Page</h1>
-                    <p class="projectDescription">Esse é um projeto em que eu quis praticar mais de flex box,
-                        responsividade e estilização com css. A inspiração dessa home-page veio de um projeto em figma
-                        que eu encontrei no site: <span
-                            class="link">https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY</span>,
-                        um site com vários exemplos de projetos de web designes para front-end</p>
-                    <a href="https://lighthearted-banoffee-731dc9.netlify.app" target="_blank" class="projectButton">Ver
-                        mais</a>
-                </div>
+        <!-- =============NAVBAR-MOBILE=========== -->
+        <div class="navbar-mobile">
+            <div class="btn-mobile">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
             </div>
 
-            <div class="project">
-                <div class="laptop">
-                    <img class="molde" src="./img/laptop.png" alt="laptop">
-                    <div class="laptopScreen">
-                        <img class="laptopApp" src="./img/ecommerce.png" alt="">
-                    </div>
-                </div>
-                <div class="projectDetail">
-                    <h1 class="projectTitle">E-commerce Fashion</h1>
-                    <p class="projectDescription">
-                        Uma aplicação front-end construida usando ReactJS. Nela usei o React-router-dom para fazer o sistema de rotas.
-                        Além disso, usei stylede-components para estilização oque facilita e agiliza a construção do app. Segue o link para conferir. 
-
-                    </p>
-                    <a href="https://effervescent-ganache-e81812.netlify.app" target="_blank" class="projectButton">Ver
-                        mais</a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="laptop">
-                    <img class="molde" src="./img/laptop.png" alt="laptop">
-                    <div class="laptopScreen">
-                        <img class="laptopApp" src="./img/dashboard.png" alt="">
-                    </div>
-                </div>
-                <div class="projectDetail">
-                    <h1 class="projectTitle">Admin Panel</h1>
-                    <p class="projectDescription">
-                        Esse é um projeto de adminstração de vendas e lucros. 
-                        Foi utilizado o framework ReactJS e bibliotecas como Material Icons para estilização.
-                        Os dados nesse projeto são fictícios e ainda nao existe integração com bando de dados.
-                        Clique abaixo pra ver o projeto.
-                    </p>
-                    <a href="https://frabjous-madeleine-d5bef8.netlify.app/" target="_blank" class="projectButton">Ver
-                        mais</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="laptop">
-                    <img class="molde" src="./img/laptop.png" alt="laptop">
-                    <div class="laptopScreen">
-                        <img class="laptopApp" src="./img/rceitas.png" alt="">
-                    </div>
-                </div>
-                <div class="projectDetail">
-                    <h1 class="projectTitle">Receitas App</h1>
-                    <p class="projectDescription">
-                        Um aplicative web que mostra receitas aleatórias apenas com um clique no botão.
-                        Criei usando uma API de receitas RecipeMeals, uma API gratuita que possue varios tipos de
-                        receitas. O app é para pessoas que estão sem ideias de qual refeição preparar.
-
-                    </p>
-                    <a href="https://sparkling-crostata-57c27f.netlify.app" target="_blank" class="projectButton">Ver
-                        mais</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="laptop">
-                    <img class="molde" src="./img/laptop.png" alt="laptop">
-                    <div class="laptopScreen">
-                        <img class="laptopApp" src="./img/pokedex.png" alt="">
-                    </div>
-                </div>
-                <div class="projectDetail">
-                    <h1 class="projectTitle">Pokedéx App</h1>
-                    <p class="projectDescription">
-                        Um projeto usando PokedéxAPI que mostra 500 poquemons com seus nomes, tipos e status de poder.
-                        Nessa aplicação usei um apenas HTML, CSS,Javascript.
-                    </p>
-                    <a href="https://jazzy-kheer-2d0cd7.netlify.app/" target="_blank" class="projectButton">Ver mais</a>
-                </div>
-            </div>
+            <ul class="nav-mobile">
+                <li class="nav-item-mobile"><a href="#home">Home</a></li>
+                <li class="nav-item-mobile"><a href="#about">Aboute</a></li>
+                <li class="nav-item-mobile"><a href="#skills">Skills</a></li>
+                <li class="nav-item-mobile"><a href="#projects">Projects</a></li>
+                <li class="nav-item-mobile"><a href="#contact">Contact</a></li>
+                <li class="theme"><input type="radio"> Dark</button></li>
+            </ul>
         </div>
-
-        <!-- SKILLS -->
-
-        <div class="skillsContainer">
-            <div class="skillTextContainer">
-                <h1 class="skillTitle">Skills</h1>
-                <h3 class="skillSubTitle">Passe o mouse em cima para ver meu nível em casa skill</h3>
-            </div>
-            <div class="skills">
-                <div class="skill esq">
-                    <img src="./img/html.png" alt="">
-                    <div class="percentual">91%</div>
-                </div>
-                <div class="skill esq">
-                    <img src="./img/css.png" alt="">
-                    <div class="percentual">88%</div>
-                </div>
-                <div class="skill esq">
-                    <img src="./img/js.png" alt="">
-                    <div class="percentual">89%</div>
-                </div>
-                <div class="skill esq">
-                    <img src="./img/react.png" alt="">
-                    <div class="percentual">80%</div>
-                </div>
-                <div class="skill dir">
-                    <img src="./img/node.png" alt="">
-                    <div class="percentual">75%</div>
-                </div>
-                <div class="skill dir">
-                    <img src="./img/tailwindcss.png" alt="">
-                    <div class="percentual">67%</div>
-                </div>
-                <div class="skill dir">
-                    <img src="./img/styled.png" alt="">
-                    <div class="percentual">80%</div>
-                </div>
-                <div class="skill dir">
-                    <img src="./img/git.png" alt="">
-                    <div class="percentual">76%</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- GITHUB -->
-
-        <div class="githubContainer">
-            <h1 class="githubTitle">
-                Quer ver mais projetos?
-            </h1>
-            <div class="githubChart">
-                <div class="dates">
-                    <span>Jan</span>
-                    <span>Fev</span>
-                    <span>Mar</span>
-                    <span>Abr</span>
-                    <span>Mai</span>
-                    <span>Jun</span>
-                    <span>Jul</span>
-                    <span>Ago</span>
-                    <span>Set</span>
-                    <span>Out</span>
-                    <span>Nov</span>
-                    <span>Dez</span>
-                </div>
-                <div class="boxContainer">
-
-                </div>
-                <a href="https://github.com/wlissisDev" target="_blank" class="githubLink">Meu Github</a>
-            </div>
-            <div class="githubSm">
-                <a href="https://github.com/wlissisDev" target="_blank">
-                    <img src="./img/github.png" alt="">
-                </a>
-                <h2>Meu Github</h2>
-            </div>
-        </div>
-
-        <!-- CONTACT -->
-
-        <div class="contactContainer">
-            <h1 class="contactTitle">Contate-me</h1>
-            <div class="perfil">
-                <img src="./img/perfil.jpeg" alt="">
-            </div>
-            <div class="sociais">
-                <a href="https://www.linkedin.com/in/wlissis-ribeiro-65ab331a2/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
-                <a href="https://github.com/wlissisDev" target="_blank"><img src="./img/github.png" alt=""></a>
-            </div>
-            <div class="info">
-                <a href="mailto:wlissisrds@gmail.com" target="_blank"><img src="./img/gmail.png" alt="">
-                    <p>wlissisrds@gmail.com</p>
-                </a>
-                <a href="" target="_blank"><img src="./img/telefone.png" alt="">
-                    <p>+55 (85) 98130-5644</p>
-                </a>
-                <a href="" target="_blank"><img src="./img/pino-de-localizacao.png" alt="">
-                    <p>CEP 61655800</p>
-                </a>
-            </div>
-        </div>
-
+        <!-- ====================================== -->
     </div>
-    <script src="./main.js"></script>
+    <section class="section" id="home">
+        <h1 class="title main">Olá, eu sou Wlissis</h1>
+        <h3 class="sub-title">< Desenvolvedor Web /></h3>
+        <div class="img-contact">
+            <a href="https://www.linkedin.com/in/wlissis-ribeiro-65ab331a2/" target="_blank">
+                <img src="/img/github.png" alt="">
+            </a>
+            <a href="https://github.com/wlissisDev" target="_blank">
+                <img src="/img/linkedin.png" alt="">
+            </a>
+        </div>
+        <div class="home">
+            <img src="/img/perfil.jpeg" class="img-perfil" alt="perfil foto">
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h1 class="title">Sobre mim</h1>
+        <div class="about">
+            <div class="img-container">
+                <img src="/img/about.jpeg" class="img-about" alt="">
+            </div>
+            <p class="desc-about">
+                Meu nome é Wlissis, atualmente sou <span> Programador Web Front-end</span>.
+                Estou cursando Ciências da Computação com data de conclusão prevista para o ano de 2023. Sou um
+                admirador da
+                tecnologia e de como ela tem ajudado as pessoas. Estou sempre em busca de novos aprendizados sejam em
+                soft skills ou hard skills
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills">
+            <ul class="skill-list">
+                <li class="skill">
+                    <img src="/img/react.png" alt="">
+                    <span>ReactJS</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/styled.png" alt="">
+                    <span>Styled - Components</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/css.png" alt="">
+                    <span>CSS</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/html.png" alt="">
+                    <span>HTML</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/git.png" alt="">
+                    <span>Git</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/js.png" alt="">
+                    <span>Javascript</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/node.png" alt="">
+                    <span>NodeJS</span>
+                </li>
+                <li class="skill">
+                    <img src="/img/tailwindcss.png" alt="">
+                    <span>Tailwindcss</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h1 class="title">Projetos</h1>
+        <div class="projects">
+
+            <ul class="project-list">
+
+                <li class="project">
+                    <div class="container-img-project">
+                        <img src="/img/laptop.png" class="laptop" alt="">
+                        <img src="/img/ecommerce.png" class="project-img" lt="">
+                    </div>
+                    <div class="desc-project">
+                        <h3>Ecommerce</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus officia corrupti dolorem sint sequi consectetur,
+                            distinctio quod in vel dolor ipsa quo, iusto dolores aut totam voluptate natus sunt
+                            delectus?
+                        </p>
+                        <a class="button" href="https://effervescent-ganache-e81812.netlify.app/" target="_blank">VER
+                            MAIS</a>
+                    </div>
+                </li>
+
+                <li class="project reverse">
+                    <div class="container-img-project">
+                        <img src="/img/laptop.png" class="laptop" alt="">
+                        <img src="/img/space.png" class="project-img" lt="">
+                    </div>
+                    <div class="desc-project">
+                        <h3>Space Tourism</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus officia corrupti dolorem sint sequi consectetur,
+                            distinctio quod in vel dolor ipsa quo, iusto dolores aut totam voluptate natus sunt
+                            delectus?
+                        </p>
+                        <a class="button" href="https://taupe-beignet-360413.netlify.app/" target="_blank">VER
+                            MAIS</a>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <div class="container-img-project">
+                        <img src="/img/laptop.png" class="laptop" alt="">
+                        <img src="/img/pokedex.png" class="project-img" lt="">
+                    </div>
+                    <div class="desc-project">
+                        <h3>Pokédex</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus officia corrupti dolorem sint sequi consectetur,
+                            distinctio quod in vel dolor ipsa quo, iusto dolores aut totam voluptate natus sunt
+                            delectus?
+                        </p>
+                        <a class="button" href="https://jazzy-kheer-2d0cd7.netlify.app/" target="_blank">VER MAIS</a>
+                    </div>
+                </li>
+
+
+                <li class="project reverse">
+                    <div class="container-img-project">
+                        <img src="/img/laptop.png" class="laptop" alt="">
+                        <img src="/img/dashboard.png" class="project-img" lt="">
+                    </div>
+                    <div class="desc-project">
+                        <h3>Admin Panel</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus officia corrupti dolorem sint sequi consectetur,
+                            distinctio quod in vel dolor ipsa quo, iusto dolores aut totam voluptate natus sunt
+                            delectus?
+                        </p>
+                        <a class="button" href="https://frabjous-madeleine-d5bef8.netlify.app/" target="_blank">VER
+                            MAIS</a>
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h1 class="title">Contate-me</h1>
+        <div class="contact">
+                <a id="fone" href="#">
+                    <img src="/img/telefone.png" alt="">
+                    +55 (85) 9 8130 5644
+                </a>
+            <form class="form" action="https://formsubmit.co/wlissisdev@gmail.com" method="POST">
+                <input type="hidden" name="_cc" value="wlissisrds@gmail.com">
+                
+                <div>
+                    <label for="name" aria-required="true">Nome</label>
+                    <input id="name" name="name" type="text" placeholder="Digite seu nome" required>
+                </div>
+
+                <div>
+                    <label for="email" aria-required="true">Email</label>
+                    <input id="name" name="email" type="text" placeholder="Digite seu email" required>
+                </div>
+
+                <div>
+                    <label for="subject">Assunto</label>
+                    <input id="subject" name="assunto" type="text" placeholder="Assunto" required>
+                </div>
+
+
+                <div>
+                    <label for="message">Envie uma menssagem</label>
+                    <textarea name="menssagem" id="message" placeholder="Escreva uma menssagem" required></textarea>
+                </div>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/succes.html">
+                <input type="hidden" name="_autoresponse" value="Seu email foi recebido!">
+
+                <button class="formBnt" type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+    </div>
+    <script src="script.js">Enviar</script>
 </body>
 
 </html>

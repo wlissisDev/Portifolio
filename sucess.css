@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.title {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+    color: transparent;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    font-size: 60px;
+}
+
+.button{
+    padding: 20px 60px;
+    border: 1px solid rgba(253, 29, 29, 1)  ;
+    text-decoration: none;
+    color: rgba(252, 176, 69, 1) ;
+    font-size: 30px;
+}
